@@ -12,6 +12,8 @@
 				background-color: #0e0f10;
 				margin: 0;
 				color: white;
+				font-family: 'Poppins', sans-serif;
+				
 			}
 			.tabela-principal {
 				width: 100%;
@@ -33,13 +35,15 @@
 				text-align: center;
 				position: fixed;
 				height: 100%;
+				box-sizing: border-box;
 				
 			}
 
 			.table-body {
-				padding-left: 25%;
-				padding-right: 25%;
+				padding-left: 15%;
+				padding-right: 4%;
 				vertical-align: top;
+				text-align: justify;
 			}
 
 			.title {
@@ -54,10 +58,12 @@
 				padding: 30px;
 				border-radius: 8px;
 				display: flex;
+				
 			}
 
 			.card-box-body {
 				margin-left: 20px;
+				
 
 			}
 
@@ -73,26 +79,57 @@
 			}
 
 			.menu a:hover {
-				text-decoration: underline;
-				font-weight: bold;
+				color: #25ca7f ;
 
 			}
 
+			.menu p {
+				margin-bottom: 30px;
+			}
+
+
+			.menu a i {
+				font-size: 30px;
+			}
+
+			.menu .logo {
+				font-size: 40px;
+				font-weight: 600;
+				border-bottom: 5px solid #25ca7f;
+			}
+
 		</style>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
 	</head>
 
 	<body>
 		<table class="tabela-principal">
 			<tr>
 				<td class="menu">
+					<p class="logo">
+						CV
+					</p>
+					
 					<p>
-						<a target="" href="#aboutmesection">Sobre mim</a>
+						<a target="" href="#aboutmesection">
+							<i class="fa-solid fa-user-tie"></i>
+							</a>
 					</p>
 					<p>
-						<a target="" href="#experiencesection">Experience</a>
+						<a target="" href="#experiencesection">
+							<i class="fa-solid fa-briefcase"></i>
+							</a>
 					</p>
 					<p>
-						<a target="" href="#contactsection">Contato</a>
+						<a target="" href="#contactsection">
+							<i class="fa-solid fa-address-book"></i>
+							</a>
 					</p>
 					
 				</td>
