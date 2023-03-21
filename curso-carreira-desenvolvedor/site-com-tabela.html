@@ -1,8 +1,14 @@
 <html>
 	<head>
-		<title>Currículo Virtual</title>
+		<title>Gabriel Assunção - CV</title>
 
 		<style>
+
+			* {
+				box-sizing: border-box;
+				margin: 0px;
+				padding: 0px;
+			}
 
 			h1, h2, h3, h4, h5 {
 				margin: 0px;
@@ -47,7 +53,7 @@
 			}
 
 			.title {
-				font-size: 40px;
+			
 				text-align: center;
 				margin-top: 50px;
 				margin-bottom: 50px;
@@ -68,7 +74,7 @@
 			}
 
 			.card-box-img img {
-				border-radius: 60%;
+				border-radius: 55%;
 				height: 200px;
 
 			}
@@ -96,6 +102,66 @@
 				font-size: 40px;
 				font-weight: 600;
 				border-bottom: 5px solid #25ca7f;
+			}
+
+			.service-container {
+				width: 100%;
+				display: flex;
+				flex-wrap: wrap;
+			}
+
+			.service-container .service-item {
+				width: calc(33.33%-32px);
+				box-sizing: border-box;
+				/* margin-bottom: 16px; */
+				margin: 16px;
+			}
+
+			.service-container .service-item .service-item-card {
+				background-color: #070708;
+				border:  1px solid black;
+				border-radius: 16px;
+				height: 300px;
+				padding: 40px;
+				box-sizing: border-box;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+			}
+
+			.service-container .service-item .service-item-card:hover {
+				border: 1px solid #25ca7f;
+			}
+
+			.service-container .service-item .service-item-card .service-item-card-icon {
+				background-color: #0e0f10;
+				height: 80px;
+				border: 1px solid black;
+				width: 80px;
+				border-radius: 50%;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+
+			.service-container .service-item .service-item-card .service-item-card-icon:hover {
+				border: 1px solid #25ca7f;
+			}
+
+			.service-container .service-item .service-item-card .service-item-card-icon i {
+				font-size: 30px;
+			}
+
+			.service-container .service-item .service-item-card .service-item-card-title {
+				margin-top: 16px;
+				margin-bottom: 16px;
+
+			}
+
+			.service-container .service-item .service-item-card .service-item-card-description {
+				text-align: center;
+
 			}
 
 		</style>
@@ -134,7 +200,7 @@
 					
 				</td>
 				<td class="table-body">
-					<div id="aboutmesection" style="padding-bottom: 30px; height: 1000px;">
+					<div id="aboutmesection" style="padding-bottom: 30px; min-height: 1000px;">
 						<h1 class="title">Who am I?</h1>
 						<div class="card-box">
 							<div class="card-box-img">
@@ -174,6 +240,85 @@
 										</p>
 								</p>
 							</div>
+						</div>
+						<h2 class="title"> Áreas de Atuação </h2>
+						<div class="service-container">
+							<div class="service-item">
+								<div class="service-item-card">
+									<div class="service-item-card-icon">
+										<i class="fa-solid fa-desktop"></i>
+									</div>
+									<div class="service-item-card-title"> 
+										<h2>Front end Developer</h2>
+
+									</div>
+									<div class="service-item-card-description">
+										<span>Html, CSS e Javascript</span>
+									
+
+									</div>
+								</div>
+
+								<div class="service-item-card">
+									<div class="service-item-card-icon">
+										<i class="fa-solid fa-desktop"></i>
+									</div>
+									<div class="service-item-card-title"> 
+										<h2>Front end Developer</h2>
+
+									</div>
+									<div class="service-item-card-description">
+										<span>Html, CSS e Javascript</span>
+									
+
+									</div>
+								</div>
+								<div class="service-item-card">
+									<div class="service-item-card-icon">
+										<i class="fa-solid fa-desktop"></i>
+									</div>
+									<div class="service-item-card-title"> 
+										<h2>Front end Developer</h2>
+
+									</div>
+									<div class="service-item-card-description">
+										<span>Html, CSS e Javascript</span>
+									
+
+									</div>
+								</div>
+								<div class="service-item-card">
+									<div class="service-item-card-icon">
+										<i class="fa-solid fa-desktop"></i>
+									</div>
+									<div class="service-item-card-title"> 
+										<h2>Front end Developer</h2>
+
+									</div>
+									<div class="service-item-card-description">
+										<span>Html, CSS e Javascript</span>
+									
+
+									</div>
+								</div>
+								<div class="service-item-card">
+									<div class="service-item-card-icon">
+										<i class="fa-solid fa-desktop"></i>
+									</div>
+									<div class="service-item-card-title"> 
+										<h2>Front end Developer</h2>
+
+									</div>
+									<div class="service-item-card-description">
+										<span>Html, CSS e Javascript</span>
+									
+
+									</div>
+								</div>
+
+							</div>
+								
+							
 						</div>
 					</div>
 					<div id="experiencesection" style="height: 1000px">
