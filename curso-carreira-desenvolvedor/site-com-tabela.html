@@ -4,6 +4,10 @@
 
 		<style>
 
+			html {
+				scroll-behavior: smooth;
+			}
+
 			* {
 				box-sizing: border-box;
 				margin: 0px;
@@ -44,7 +48,7 @@
 				padding-left: 15%;
 				padding-right: 4%;
 				vertical-align: top;
-				text-align: justify;
+			
 			}
 
 			.title {
@@ -55,9 +59,6 @@
 			}
 
 			.card-box {
-				background: #070708;
-				padding: 30px;
-				border-radius: 8px;
 				display: flex;
 				
 			}
@@ -116,11 +117,8 @@
 			}
 
 			.service-container .service-item .service-item-card {
-				background-color: #070708;
 				border:  1px solid black;
-				border-radius: 16px;
 				height: 300px;
-				padding: 40px;
 				display: flex;
 				flex-direction: column;
 				align-items: center;
@@ -159,8 +157,63 @@
 
 			.service-container .service-item .service-item-card .service-item-card-description {
 				text-align: center;
+			}
 
+			.flexbox {
+				display: flex;
+				gap: 30px;
 
+			}
+
+			.flexbox .flexbox-item {
+				width: 50%;
+			}
+
+			.card {
+				background: #070708;
+				padding: 30px;
+				border-radius: 8px;
+			}
+
+			.timeline-item {
+				padding-bottom: 15px;
+				border-left: 1px solid #25ca7f;
+				padding-left: 32px;
+				position: relative;
+			}
+
+			.timeline-item-period {
+				font-size: 12px;
+				margin-top: 8px;
+				margin-bottom: 8px;
+				color: #25ca7f;
+			}
+
+			.timeline-item-marker {
+				display: flex;
+				align-items: center;
+				position: absolute;
+				top: 6px;
+				left: -8px;
+
+			}
+
+			.timeline-item-marker-circle {
+				height: 15px;
+				width: 15px;
+				background: #25ca7f;
+				border-radius: 50%;
+			}
+
+			.timeline-item-marker-line {
+				
+				height: 1px;
+				width: 15px;
+				background: #25ca7f;
+			}
+
+			#aboutmesection , #experiencesection, #contactsection {
+				scroll-margin-top: 40px;
 			}
 
 		</style>
@@ -201,7 +254,7 @@
 				<td class="table-body">
 					<div id="aboutmesection" style="padding-bottom: 30px; min-height: 1000px;">
 						<h1 class="title">Who am I?</h1>
-						<div class="card-box">
+						<div class="card-box card" >
 							<div class="card-box-img">
 								<img
 									src="./img/photo_2023-01-04_20-46-12.jpg"
@@ -243,7 +296,7 @@
 						<h2 class="title"> Áreas de Atuação </h2>
 						<div class="service-container">
 							<div class="service-item">
-								<div class="service-item-card">
+								<div class="service-item-card card">
 									<div class="service-item-card-icon">
 										<i class="fa-solid fa-desktop"></i>
 									</div>
@@ -257,7 +310,7 @@
 								</div>
 							</div>
 							<div class="service-item">
-								<div class="service-item-card">
+								<div class="service-item-card card">
 									<div class="service-item-card-icon">
 										<i class="fa-solid fa-cogs"></i>
 									</div>
@@ -271,7 +324,7 @@
 								</div>
 							</div>
 							<div class="service-item">
-								<div class="service-item-card">
+								<div class="service-item-card card">
 									<div class="service-item-card-icon">
 										<i class="fa-solid fa-mobile-screen"></i>
 									</div>
@@ -285,7 +338,7 @@
 								</div>
 							</div>
 							<div class="service-item">
-								<div class="service-item-card">
+								<div class="service-item-card card">
 									<div class="service-item-card-icon">
 										<i class="fa-solid fa-database"></i>
 									</div>
@@ -297,46 +350,164 @@
 										<span>MySQL and PostGree</span>
 									</div>
 								</div>
-							</div>						
+							</div>
+							<div class="service-item">
+								<div class="service-item-card card">
+									<div class="service-item-card-icon">
+										<i class="fa-solid fa-chart-gantt"></i>
+									</div>
+									<div class="service-item-card-title"> 
+										<h3>Project Management</h3>
+
+									</div>
+									<div class="service-item-card-description">
+										<span>People Management</span>
+									</div>
+								</div>
+							</div>
+							<div class="service-item">
+								<div class="service-item-card card">
+									<div class="service-item-card-icon">
+										<i class="fa-solid fa-magnifying-glass-chart"></i>
+									</div>
+									<div class="service-item-card-title"> 
+										<h3>Data Analysis</h3>
+
+									</div>
+									<div class="service-item-card-description">
+										<span>Microsoft Excel and KPI Dashboards</span>
+									</div>
+								</div>
+							</div>					
 						</div>
 					</div>
-					<div id="experiencesection" style="height: 1000px">
-						<h1 class="title">Education</h1>
-						<p>
-							<b>
-								Universidade Salvador - Logistics Degree, Logistics,
-								Materials and Supply Chain Management
-							</b>
-						</p>
-						<p>
-							<b>
-								Universidade Salvador - Master of Business
-								Administration (MBA), Project Management
-							</b>
-						</p>
+					<div id="experiencesection">
+						<h1 class="title">Resume</h1>
+						<div class="flexbox">
+							<div class="flexbox-item">
+								<h2 class="title">Experience</h2>
+								<div class="card">
+									<div class="timeline-item">
+										<div class="timeline-item-marker">
+											<div class="timeline-item-marker-circle">
 
-						<h1 class="title">Experience</h1>
-						<p>
-							<b>FedEx Logistics - Logistics Assistant:</b> Support
-							periodic inventory with SAP ERP; Maintain excel sheets
-							with significant storage data volume daily; Improve and
-							keep updated Key Performance Indicators; Strong use of
-							Microsoft Excel and Microsoft PowerPoint; Report any
-							operational problem directly to supervisor.
-						</p>
-						<p>
-							<b>Unilever Foods - Transportation Assistant:</b>
-							Support the Warehouse Supervisor on order fulfilment
-							requirements with a route scheduling system and backhaul
-							to create the most efficient daily delivery schedule;
-							Transmitting the route schedule to the general manager;
-							Assist the Transport and Warehouse teams in delivering
-							network targets; Warehouse budget follow-on; Active
-							participation in the monthly S&OP and Supply Review
-							meetings to share the current status of the storage
-							capacity plan and if any deviation risks; Warehouse
-							inspection to guarantee a tidy environment.
-						</p>
+											</div>
+											<div class="timeline-item-marker-line">
+
+											</div>
+										</div>
+										<h3>Logistics Assistant</h3>
+										<p class="timeline-item-period">
+											<i class="fa-solid fa-calendar-days"></i>
+											Jan 2018 - December 2019 | Fedex Logistics</p>
+										<p>Support	periodic inventory with SAP ERP; Maintain excel sheets
+											with significant storage data volume daily; Improve and
+											keep updated Key Performance Indicators; Strong use of
+											Microsoft Excel and Microsoft PowerPoint; Report any
+											operational problem directly to supervisor.
+										</p>
+									</div>
+									<div class="timeline-item">
+										<div class="timeline-item-marker">
+											<div class="timeline-item-marker-circle">
+
+											</div>
+											<div class="timeline-item-marker-line">
+
+											</div>
+										</div>
+										<h3>Logistics Assistant</h3>
+										<p class="timeline-item-period">
+											<i class="fa-solid fa-calendar-days"></i>
+											Jan 2018 - December 2019 | Fedex Logistics</p>
+										<p>Support	periodic inventory with SAP ERP; Maintain excel sheets
+											with significant storage data volume daily; Improve and
+											keep updated Key Performance Indicators; Strong use of
+											Microsoft Excel and Microsoft PowerPoint; Report any
+											operational problem directly to supervisor.
+										</p>
+									</div>
+									<div class="timeline-item">
+										<div class="timeline-item-marker">
+											<div class="timeline-item-marker-circle">
+
+											</div>
+											<div class="timeline-item-marker-line">
+
+											</div>
+										</div>
+										<h3>Logistics Assistant</h3>
+										<p class="timeline-item-period">
+											<i class="fa-solid fa-calendar-days"></i>
+											Jan 2018 - December 2019 | Fedex Logistics</p>
+										<p>Support	periodic inventory with SAP ERP; Maintain excel sheets
+											with significant storage data volume daily; Improve and
+											keep updated Key Performance Indicators; Strong use of
+											Microsoft Excel and Microsoft PowerPoint; Report any
+											operational problem directly to supervisor.
+										</p>
+									</div>
+									<div class="timeline-item">
+										<div class="timeline-item-marker">
+											<div class="timeline-item-marker-circle">
+
+											</div>
+											<div class="timeline-item-marker-line">
+
+											</div>
+										</div>
+										<h3>Logistics Assistant</h3>
+										<p class="timeline-item-period">
+											<i class="fa-solid fa-calendar-days"></i>
+											Jan 2018 - December 2019 | Fedex Logistics</p>
+										<p>Support	periodic inventory with SAP ERP; Maintain excel sheets
+											with significant storage data volume daily; Improve and
+											keep updated Key Performance Indicators; Strong use of
+											Microsoft Excel and Microsoft PowerPoint; Report any
+											operational problem directly to supervisor.
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="flexbox-item">
+								<h2 class="title">Education</h2>
+								<div class="card">
+									<div class="timeline-item">
+										<div class="timeline-item-marker">
+											<div class="timeline-item-marker-circle">
+
+											</div>
+											<div class="timeline-item-marker-line">
+
+											</div>
+										</div>
+										<h3>Master of Business Administration (MBA)</h3>
+										<p class="timeline-item-period">
+											<i class="fa-solid fa-calendar-days"></i>
+											Jan 2013 - Dec 2015 | Project Management</p>
+										<p>......
+										</p>
+									</div>
+									<div class="timeline-item">
+										<div class="timeline-item-marker">
+											<div class="timeline-item-marker-circle">
+
+											</div>
+											<div class="timeline-item-marker-line">
+
+											</div>
+										</div>
+										<h3>Undergraduate</h3>
+										<p class="timeline-item-period">
+											<i class="fa-solid fa-calendar-days"></i>
+											Jan 2011 - Dec 2012 | Logistics Degree</p>
+										<p>....
+										</p>
+									</div>
+								</div>
+							</div>
+							
+						</div>
 						<h1 class="title">Tecnologies</h1>
 						<p><b>Javascript (06 months):</b></p>
 						<p><b>Html (06 months):</b></p>
