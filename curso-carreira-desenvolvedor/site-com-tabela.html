@@ -99,9 +99,11 @@
 			}
 
 			.menu .logo {
-				font-size: 40px;
-				font-weight: 600;
-				border-bottom: 5px solid #25ca7f;
+				border-bottom: 2px solid #25ca7f;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				margin-bottom: 50px;
 			}
 
 			.service-container {
@@ -261,6 +263,68 @@
 				top: -6px;
 			}
 
+			.contact-item {
+				text-align: center;
+				flex-direction: column;
+				width: 33.33%;
+				align-items: center;
+				gap: 20px;
+
+			}
+
+			.contact-item-icon {
+				font-size: 40px;
+				border: 1px solid #25ca7f;
+				width: 80px;
+				height: 80px;
+				border-radius: 50%;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+
+			.contact-item-value a {
+				color: white;
+				text-decoration: none;
+
+			}
+
+			.contact-item-value a:hover {
+				text-decoration:underline;
+			}
+
+			h2.fill-animation {
+				position: relative;
+				color:#252839;
+				-webkit-text-stroke: 1px white;
+				text-transform: uppercase;
+				font-size: 60px;
+
+			}
+			h2.fill-animation::before {
+				content: attr(data-text);
+				position: absolute;
+				top:0;
+				left:0;
+				width: 0;
+				height: 100%;
+				color:#01fe87;
+				-webkit-text-stroke: 0vw #383d52;
+				overflow: hidden;
+				animation: animate 6s linear forwards;
+			}
+
+			@keyframes animate {
+				0% ,10%, {
+					width: 0;
+				}
+				70%,90%,100%{
+					width: 100%;
+				}
+
+			}
+			
+
 		</style>
 
 		<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -275,9 +339,9 @@
 		<table class="tabela-principal">
 			<tr>
 				<td class="menu">
-					<p class="logo">
-						CV
-					</p>
+					<div class="logo">
+						<h2  data-text="CV" class="fill-animation">CV</h2>
+					</div>
 					
 					<p>
 						<a target="" href="#aboutmesection">
@@ -651,10 +715,42 @@
 					</div>
 					
 					<div id="contactsection" style="height: 1000px">
-						<h1 class="title">Contato</h1>
-						<p><b>Whatsapp:</b> +55 71 999816212</p>
-						<p><b>Instagram:</b> instagram.com/_gabrielsantos.a/</p>
-						<p><b>E-mail:</b> gabdevsantos@gmail.com</p>
+						<h1 class="title">Contact</h1>
+						<div class="card flexbox">
+							<div class="contact-item flexbox">
+								<div class="contact-item-icon">
+									<i class="fa-solid fa-paper-plane"></i>
+								</div>
+								<div class="contact-item-value">
+									<a href="mailto:gabdevsantos@gmail.com"> gabdevsantos@gmail.com </a>
+								</div>
+								<div class="contact-item-description">
+									E-mail
+								</div>
+							</div>
+							<div class="contact-item flexbox">
+								<div class="contact-item-icon">
+									<i class="fab fa-instagram"></i>
+								</div>
+								<div class="contact-item-value">
+									<a target="_blank" href="https://www.instagram.com/_gabrielsantos.a/"> _gabrielsantos.a </a>
+								</div>
+								<div class="contact-item-description">
+									Instagram
+								</div>
+							</div>
+							<div class="contact-item flexbox">
+								<div class="contact-item-icon">
+									<i class="fas fa-phone"></i>
+								</div>
+								<div class="contact-item-value">
+									+55 71 9 9981-6212
+								</div>
+								<div class="contact-item-description">
+									Phone
+								</div>
+							</div>
+						</div>
 					</div>
 				</td>
 			</tr>
