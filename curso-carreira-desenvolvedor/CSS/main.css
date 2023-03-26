@@ -1,0 +1,348 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: #0e0f10;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+.container {
+    width: 100%;
+    display: flex;
+}
+
+.content {
+    height: 100%;
+    width: 100%;
+	vertical-align: top;    
+    max-width: 1500px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10%;
+}
+
+.title {
+			
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.flexbox {
+    display: flex;
+    gap: 30px;
+
+}
+
+.flexbox .flexbox-item {
+    width: 50%;
+}
+
+#aboutmesection , #experiencesection, #contactsection {
+    scroll-margin-top: 40px;
+}
+
+.padding-top-60 {
+    padding-top: 60px !important;
+}
+
+
+/* MENU SECTION INIT*/
+
+.menu {
+    background-color: red;
+    height: 100%;
+    width: 10%;
+    background: #1d1d22;
+    padding: 30px;
+    vertical-align: top;
+    text-align: center;
+    position: fixed;
+  				
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    color: #25ca7f ;
+
+}
+
+.menu p {
+    margin-bottom: 30px;
+}
+
+
+.menu a i {
+    font-size: 30px;
+}
+
+.menu .logo {
+    border-bottom: 2px solid #25ca7f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+/* MENU SECTION END*/
+
+/* FILL ANIMATION SECTION INIT */
+
+h2.fill-animation {
+    position: relative;
+    color:#252839;
+    -webkit-text-stroke: 1px white;
+    text-transform: uppercase;
+    font-size: 60px;
+
+}
+
+h2.fill-animation::before {
+    content: attr(data-text);
+    position: absolute;
+    top:0;
+    left:0;
+    width: 0;
+    height: 100%;
+    color:#01fe87;
+    -webkit-text-stroke: 0vw #383d52;
+    overflow: hidden;
+    animation: animate 6s linear forwards;
+}
+
+@keyframes animate {
+    0% ,10%, {
+        width: 0;
+    }
+    70%,90%,100%{
+        width: 100%;
+    }
+
+}
+
+/* FILL ANIMATION SECTION END */
+
+/* CardBox Section INIT */
+
+.card {
+    background: #070708;
+    padding: 30px;
+    border-radius: 8px;
+}
+
+.card-box {
+    display: flex;
+    
+}
+
+.card-box-body {
+    margin-left: 20px;
+    
+
+}
+
+.card-box-img img {
+    border-radius: 55%;
+    height: 200px;
+
+}
+
+.card-box-img img:hover {
+    border: 1px solid #25ca7f;
+}
+
+/* CardBox Section End */
+
+/* SERVICE SECTION INI */
+
+.service-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.service-container .service-item {
+    width: calc(33.33% - 32px);
+    /* margin-bottom: 16px; */
+    margin: 16px;
+}
+
+.service-container .service-item .service-item-card {
+    border:  1px solid black;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.service-container .service-item .service-item-card:hover {
+    border: 1px solid #25ca7f;
+}
+
+.service-container .service-item .service-item-card .service-item-card-icon {
+    background-color: #0e0f10;
+    height: 80px;
+    border: 1px solid black;
+    width: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.service-container .service-item .service-item-card .service-item-card-icon:hover {
+    border: 1px solid #25ca7f;
+}
+
+.service-container .service-item .service-item-card .service-item-card-icon i {
+    font-size: 30px;
+}
+
+.service-container .service-item .service-item-card .service-item-card-title {
+    margin-top: 16px;
+    margin-bottom: 16px;
+
+}
+
+.service-container .service-item .service-item-card .service-item-card-description {
+    text-align: center;
+}
+
+/* SERVICE SECTION END */
+
+/* TIME LINE SECTION INIT */
+
+.timeline-item {
+    padding-bottom: 15px;
+    border-left: 1px solid #25ca7f;
+    padding-left: 32px;
+    position: relative;
+}
+
+.timeline-item-period {
+    font-size: 12px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    color: #25ca7f;
+}
+
+.timeline-item-marker {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 6px;
+    left: -8px;
+
+}
+
+.timeline-item-marker-circle {
+    height: 15px;
+    width: 15px;
+    background: #25ca7f;
+    border-radius: 50%;
+}
+
+.timeline-item-marker-line {
+    
+    height: 1px;
+    width: 15px;
+    background: #25ca7f;
+}
+
+/* TIME LINE SECTION END */
+
+/* PROGESS BAR SECTION INIT */
+
+.progress-bar {
+    background-color: #0e0f10;
+    height: 8px;
+    border-radius: 8px;
+    position: relative;
+    margin-bottom: 45px;
+
+}
+
+.progress-bar-done {
+    background: #25ca7f;
+    height: 100%;
+    border-radius: 8px;
+    position: relative;
+    
+}
+
+.progress-bar-title {
+    position: absolute;
+    top: -25px;
+    
+}
+
+.progress-bar-done-text {
+    position: absolute;
+    top: -25px;
+    right: 0px;
+    
+}
+
+.progress-bar-done-check {
+    background-color: #0e0f10;
+    height: 20px;
+    width: 20px;
+    border: 4px solid #25ca7f;
+    border-radius: 50%;
+    position: absolute;
+    right: 0px;
+    top: -6px;
+}
+
+/* PROGRESS BAR SECTION END */
+
+
+/* CONTACT SECTION INIT */
+
+.contact-item {
+    text-align: center;
+    flex-direction: column;
+    width: 33.33%;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.contact-item-icon {
+    font-size: 40px;
+    border: 1px solid #25ca7f;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-item-value a {
+    color: white;
+    text-decoration: none;
+
+}
+
+.contact-item-value a:hover {
+    text-decoration:underline;
+}
+
+/* CONTACT SECTION END */
