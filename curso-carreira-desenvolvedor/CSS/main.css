@@ -195,11 +195,11 @@ h2.fill-animation::before {
 
 .service-container .service-item .service-item-card {
     border:  1px solid black;
-    height: 300px;
+    min-height: 360px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+   text-align: center;
     
 }
 
@@ -359,6 +359,8 @@ h2.fill-animation::before {
 
 /* CONTACT SECTION END */
 
+/* RESPONSIVITY SECTION */
+
 @media only screen and (max-width: 770px) {
 
     body {
@@ -382,5 +384,44 @@ h2.fill-animation::before {
         margin-top: 8px;
         line-height: 30px;
     }
+
+    .service-container .service-item {
+        width: calc(50% - 32px);
+    }
+
+    .service-container .service-item .service-item-card {
+        min-height: 300px;
+
+    }
+
+    .flexbox {
+        flex-direction: column;
+    }
+
+    .flexbox-item {
+        width: 100% !important;
+        line-height: 30px;
+    }
+
+    #contactsection .flexbox {
+        align-items: center;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+        
+    .service-container .service-item {
+        width: 100%;
+        margin: 0px;
+        margin-bottom: 16px;
+    }
+
+    .service-container .service-item .service-item-card {
+        justify-content: center;
+
+    }
+
+
 
 }
