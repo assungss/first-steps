@@ -396,6 +396,7 @@ h2.fill-animation::before {
 
     .flexbox {
         flex-direction: column;
+
     }
 
     .flexbox-item {
@@ -419,7 +420,6 @@ h2.fill-animation::before {
 
     .service-container .service-item .service-item-card {
         justify-content: center;
-
     }
 
 
