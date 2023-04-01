@@ -3,14 +3,36 @@
     <head>
         <title>Gabriel Assunção - CV</title>
         <link rel="stylesheet" href="./CSS/main.css">
+        <link rel="stylesheet" href="./CSS/responsive-menu.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 
     </head>
+
+
     <body>
+
+     
         <div class="container">
+
+            <header>
+                <input type="checkbox" id="btn-menu">
+                <label for="btn-menu">
+                  <i class="fa fa-bars" aria-hidden="true"></i>
+                  <div class="site-name">
+                    Gabriel Assunção
+                  </div>
+                </label>
+                <nav class="responsive-menu">
+                  <a onclick="closeMenu()" href="#aboutmesection">Who am I?</a>
+                  <a onclick="closeMenu()" href="#experiencesection">Resume</a>
+                  <a onclick="closeMenu()" href="#contactsection">Contact</a>
+                </nav>
+            </header>
+
+
             <div class="menu">
                 <div class="logo">
                     <h2  data-text="CV" class="fill-animation">CV</h2>
@@ -432,5 +454,14 @@
 
             </div>
         </div>
+
+        <script>
+            function closeMenu() {
+                (document.getElementById("btn-menu").checked = false)
+            }
+
+        </script>;
+
+
     </body>
 </html>
